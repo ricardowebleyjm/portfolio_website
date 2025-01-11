@@ -1,0 +1,46 @@
+:root{
+    --primary-color: #6f42c1;
+    --secondary-color: #5a3791;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --gray-color: #6c757d;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+body, html {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+input, button {
+    border-radius: 1rem;
+}
+
+.nav-link{
+    font-weight: 600;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+  }
+
+.cta-btn-purple {
+  background-color: var(--primary-color);
+  color: white;
+}
+.cta-btn-purple:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
