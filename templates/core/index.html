@@ -4,19 +4,20 @@
 
 {% block content %}
 <div class="container px-4">
+    <br> <br> <br>
     <section class="bg-white">
       <div class="py-8 px-4 mx-auto text-center position-relative" style="max-width: 1140px;">
-        <div class="row">
-            <a href="/blog" class="d-inline-flex justify-content-between align-items-center py-1 px-1 pe-4 mb-3 text-purple bg-light rounded-pill text-decoration-none hover-bg-dark">
-                <span class="text-white bg-purple px-3 py-1 rounded-pill me-3 small">New</span> 
-                <span class="text-sm fw-medium">New blog post just uploaded, see what has happened!</span> 
-                <svg class="ms-2" style="width: 12px; height: 12px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path d="M1 9l4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </a>
-        </div>
+        
+        <a href="#" class="d-inline-flex justify-content-between align-items-center py-1 px-1 pe-4 mb-3 text-purple bg-light-purple rounded-pill text-decoration-none hover-bg-dark">
+            <span class="text-white bg-purple px-3 py-1 rounded-pill me-3 small">New</span> 
+            <span class="text-sm fw-medium">New blog post just uploaded, see what has happened!</span> 
+            <svg class="ms-2" style="width: 12px; height: 12px;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path d="M1 9l4-4-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        
           <h1 class="mb-4 display-4 fw-bold text-purple">Hi, I am Ricardo Webley</h1>
-          <p class="mb-4 fs-5 text-muted">I am a passionate and skilled software developer with expertise in crafting innovative solutions and building reliable, efficient applications.</p>
+          <p class="mb-4 fs-3 text-purple">I am a passionate and skilled software developer with expertise in crafting innovative solutions and building reliable, efficient applications.</p>
           <form class="mx-auto" style="max-width: 500px;">
               <label for="default-email" class="form-label visually-hidden">Email sign-up</label>
               <div class="position-relative">
@@ -26,8 +27,8 @@
                           <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                       </svg>
                   </div>
-                  <input type="email" id="default-email" class="form-control ps-5" placeholder="Enter your email here..." required />
-                  <button type="submit" class="btn btn-purple position-absolute bottom-0 end-0 m-2">Sign up</button>
+                  <input type="email" id="email" class="form-control form-control-lg ps-5" placeholder="Enter your email here..." required />
+                  <button type="submit" class="btn cta-btn-purple position-absolute bottom-0 end-0 m-2">Sign up</button>
               </div>
           </form>
       </div>

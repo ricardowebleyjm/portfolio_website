@@ -25,7 +25,19 @@ body, html {
 }
 
 input, button {
-    border-radius: 1rem;
+    border-radius: 50px;
+}
+
+.text-purple {
+    color: var(--primary-color);
+}
+
+.bg-light-purple {
+    background-color: var(--light-color);
+}
+
+.bg-purple {
+    background-color: var(--primary-color);
 }
 
 .nav-link{
@@ -33,8 +45,12 @@ input, button {
 }
 
 .nav-link.active {
-    color: var(--primary-color) !important;
-  }
+  color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
 
 .cta-btn-purple {
   background-color: var(--primary-color);
