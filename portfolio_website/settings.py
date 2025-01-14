@@ -9,16 +9,15 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-from dotenv import load_dotenv
-load_dotenv()
-
-
 from pathlib import Path
+from configparser import RawConfigParser
 import os
-name = os.getenv("DATABASE_NAME")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+config = RawConfigParser()
+config.read(BASE_DIR / 'config/settings.ini')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -27,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-im*idbeoka)#($-#&1kh@z#^b79f@5hnuowmo%3u9)@4*yv(_5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config.getboolean('secrets', "DEBUG")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config.get('secrets', "ALLOWED_HOSTS").split(',')
 
 
 # Application definition
@@ -78,20 +77,14 @@ WSGI_APPLICATION = 'portfolio_website.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-db_name = os.getenv("DATABASE_NAME")
-db_user =  os.getenv("DATABASE_USER")
-db_password = os.getenv("DATABASE_PASSWORD")
-db_host = os.getenv("DATABASE_HOST")
-db_port = os.getenv("DATABASE_PORT")
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': db_name,
-        'USER': db_user,
-        'PASSWORD': db_password,
-        'HOST': db_host,
-        'PORT': db_port,
+        'NAME': config.get('secrets', "DATABASE_NAME"),
+        'USER': config.get('secrets', "DATABASE_USER"),
+        'PASSWORD': config.get('secrets', "DATABASE_PASSWORD"),
+        'HOST': config.get('secrets', "DATABASE_HOST"),
+        'PORT': config.get('secrets', "DATABASE_PORT"),
     }
 }
 
