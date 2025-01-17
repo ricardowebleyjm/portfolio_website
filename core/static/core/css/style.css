@@ -60,3 +60,205 @@ input, button {
   background-color: var(--secondary-color);
   color: white;
 }
+
+/* Hero Section Styling */
+.hero-container {
+  padding: 60px 15px;
+  background: linear-gradient(135deg, #f3e5f5, #e8eaf6);
+}
+
+.hero-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-announcement {
+  display: inline-flex;
+  align-items: center;
+  background: #f5f0ff;
+  padding: 8px 12px;
+  border-radius: 50px;
+  color: #6c63ff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-announcement:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.badge-new {
+  background: #6c63ff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+.announcement-text {
+  font-weight: 500;
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  stroke: #6c63ff;
+  transition: stroke 0.3s ease;
+}
+
+.hero-announcement:hover .arrow-icon {
+  stroke: #fff;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.hero-form .form-group {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+.cta-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+      font-size: 2rem;
+  }
+
+  .hero-description {
+      font-size: 1rem;
+  }
+}
+
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 15px;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6c63ff;
+  text-decoration: none;
+  border: 1px solid #6c63ff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+  background: #6c63ff;
+  color: #fff;
+}

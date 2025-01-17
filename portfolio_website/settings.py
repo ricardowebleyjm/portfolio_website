@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from configparser import RawConfigParser
 import os
+from django.core.management.utils import get_random_secret_key  
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +24,7 @@ config.read(BASE_DIR / 'config/settings.ini')
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-im*idbeoka)#($-#&1kh@z#^b79f@5hnuowmo%3u9)@4*yv(_5'
+SECRET_KEY = get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config.getboolean('secrets', "DEBUG")
