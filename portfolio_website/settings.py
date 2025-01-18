@@ -133,6 +133,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "users.CustomUser"
 
-CSRF_TRUSTED_ORIGINS = config.get('secrets', "CSRF_TRUSTED_ORIGINS").split(',')
-
-print(CSRF_TRUSTED_ORIGINS)
+if not DEBUG:
+    CSRF_COOKIE_SECURE = True
+    CSRF_TRUSTED_ORIGINS = config.get('secrets', "CSRF_TRUSTED_ORIGINS").split(',')

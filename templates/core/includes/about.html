@@ -1,0 +1,69 @@
+<!-- About Me Section -->
+<section class="about-me-section py-5" id="aboutMe">
+    <div class="container text-center">
+        <h2 class="section-title mb-4">About Me</h2>
+        <p class="section-description mb-5">
+            I'm Ricardo Webley, a passionate and skilled software developer. With years of experience in crafting innovative solutions, I thrive on building reliable and efficient applications.
+        </p>
+        <div class="row align-items-center">
+            <!-- Video Introduction -->
+            <div class="col-md-6 mb-4">
+                <div class="video-container">
+                    <video controls autoplay class="rounded" style="width: 100%; max-height: 300px;" loading="lazy">
+                        <source src="https://videos.pexels.com/video-files/6804117/6804117-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Skills and Proficiency -->
+            <div class="col-md-6">
+                <h4 class="mb-4">Skills and Expertise</h4>
+                <div class="skill">
+                    <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-code-slash me-2"></i>Web Development</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill mt-3">
+                    <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-cloud me-2"></i>Cloud Computing</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill mt-3">
+                    <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-graph-up me-2"></i>Data Analysis</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill mt-3">
+                    <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-shield-lock me-2"></i>API Development</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const progressBars = document.querySelectorAll(".animated-progress");
+        progressBars.forEach((bar) => {
+            bar.querySelector(".progress-bar").style.width = bar.style.getPropertyValue("--progress-width");
+        });
+    });
+</script>

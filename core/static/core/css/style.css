@@ -55,6 +55,7 @@ input, button {
 .cta-btn-purple {
   background-color: var(--primary-color);
   color: white;
+  font-weight: 500;
 }
 .cta-btn-purple:hover {
   background-color: var(--secondary-color);
@@ -153,6 +154,20 @@ input, button {
   box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
 }
 
+.form-input {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.text-area:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
 .cta-btn {
   position: absolute;
   right: 10px;
@@ -171,6 +186,7 @@ input, button {
 
 .cta-btn:hover {
   background: var(--secondary-color);
+  color: white;
 }
 
 /* Responsive Design */
@@ -194,7 +210,7 @@ input, button {
 .section-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #6c63ff;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -261,4 +277,269 @@ input, button {
 .project-link:hover {
   background: #6c63ff;
   color: #fff;
+}
+
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #6c63ff;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #eee;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #cfc6ff;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #cfc6ff;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+/* Modal Customization */
+.modal-custom {
+  background-color: #6c63ff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  overflow: hidden;
+}
+
+.modal-header {
+  padding: 1.5rem;
+  background-color: #524dbd;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn-close-white {
+  filter: invert(1);
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.btn-close-white:hover {
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+/* Input Styling */
+.input-custom {
+  background-color: #f9f9ff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input-custom:focus {
+  border-color: #cfc6ff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Submit Button */
+.btn-modal-submit {
+  background-color: #f9f9ff;
+  color: #6c63ff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-modal-submit:hover {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+/* Hire Me Button */
+.btn-hire-me {
+  background-color: #6c63ff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hire-me:hover {
+  background-color: #524dbd;
+  box-shadow: 0 6px 15px rgba(82, 77, 189, 0.6);
+}
+
+
+.services-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--primary-color)
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.service-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.icon-container {
+  font-size: 2.5rem;
+  color: #6f42c1;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: var(--primary-color)
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+
+.about-me-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.video-container video {
+  border: 2px solid #6f42c1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  font-size: 1rem;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.progress {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  height: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  background-color: #6f42c1;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1.5s ease-in-out;
+  width: 0;
+}
+
+.animated-progress .progress-bar {
+  width: var(--progress-width); /* Use CSS variables for dynamic widths */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--primary-color)
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
 }
