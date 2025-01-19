@@ -24,6 +24,45 @@ body, html {
     font-style: normal;
 }
 
+
+/* Remove the default Bootstrap styles */
+.custom-toggler {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.custom-toggler .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px; /* Width of the hamburger */
+  height: 18px; /* Height of the hamburger */
+}
+
+.custom-toggler .bar {
+  display: block;
+  height: 3px; /* Thickness of the bars */
+  background-color: #333; /* Color of the bars */
+  border-radius: 3px; /* Rounded corners */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* When the menu is expanded */
+.navbar-toggler[aria-expanded="true"] .bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.navbar-toggler[aria-expanded="true"] .bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+
 input, button {
     border-radius: 50px;
 }
